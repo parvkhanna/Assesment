@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-06T11:13:47Z" name="Default suite" finished-at="2022-02-06T11:14:20Z" duration-ms="32100">
+    <groups>
+    </groups>
+    <test started-at="2022-02-06T11:13:47Z" name="Default test" finished-at="2022-02-06T11:14:20Z" duration-ms="32100">
+      <class name="com.crm.test.SearchProductTest">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.crm.test.SearchProductTest@3b74ac8]" started-at="2022-02-06T11:13:47Z" name="openApp" finished-at="2022-02-06T11:13:54Z" duration-ms="6635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="search()[pri:1, instance:com.crm.test.SearchProductTest@3b74ac8]" started-at="2022-02-06T11:13:54Z" name="search" finished-at="2022-02-06T11:14:00Z" duration-ms="6057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="AddProduct()[pri:2, instance:com.crm.test.SearchProductTest@3b74ac8]" started-at="2022-02-06T11:14:00Z" name="AddProduct" finished-at="2022-02-06T11:14:01Z" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProduct -->
+        <test-method signature="addtoCart()[pri:3, instance:com.crm.test.SearchProductTest@3b74ac8]" started-at="2022-02-06T11:14:01Z" name="addtoCart" finished-at="2022-02-06T11:14:19Z" duration-ms="17803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtoCart -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.crm.test.SearchProductTest@3b74ac8]" started-at="2022-02-06T11:14:19Z" name="closeApp" finished-at="2022-02-06T11:14:20Z" duration-ms="916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.crm.test.SearchProductTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
