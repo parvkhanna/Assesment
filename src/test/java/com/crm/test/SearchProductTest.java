@@ -1,4 +1,7 @@
 package com.crm.test;
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.annotations.Test;
 
 import com.amazon.genericUtility.BaseClass;
@@ -19,7 +22,7 @@ import com.crm.objectRepositories.ShoppingCartPage;
 public class SearchProductTest extends BaseClass {
 	
 	@Test (priority = 1)
-	public void search()  
+	public void search(String Option1) throws Throwable, IOException  
 	{
 
 		
@@ -28,7 +31,7 @@ public class SearchProductTest extends BaseClass {
 		
 		
 		//To select the searchField and type the text
-		hp.searTextbox();
+		hp.searTextbox(Option1);
 		
 		//To click on the search button after entering the text value
 		hp.searchBtn();
@@ -55,6 +58,9 @@ public class SearchProductTest extends BaseClass {
 		
 		//click on add to cart button on result page 
 		acp.addtocart();
+		
+		//To verify the product is added to cart 
+		acp.verification();
 		
 		//click on cart option 
 		acp.clickOnCart();

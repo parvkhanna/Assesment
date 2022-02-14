@@ -5,9 +5,11 @@
     <classes>
       <class name="com.crm.test.SearchProductTest">
         <methods>
+          <include name="openBrowser"/>
+          <include name="AddProduct"/>
+          <include name="search"/>
           <include name="closeApp"/>
           <include name="addtoCart"/>
-          <include name="openApp"/>
         </methods>
       </class> <!-- com.crm.test.SearchProductTest -->
     </classes>

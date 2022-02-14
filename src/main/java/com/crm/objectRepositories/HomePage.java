@@ -1,12 +1,14 @@
 package com.crm.objectRepositories;
 
-import org.openqa.selenium.By;
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
+import com.crm.genericUtilities.ExcelUtility;
 import com.crm.genericUtilities.WebDriverUtility;
 
 public class HomePage {
@@ -14,6 +16,8 @@ public class HomePage {
 	public WebDriver driver;
 	
 	WebDriverUtility webdriver  = new WebDriverUtility();
+	ExcelUtility eu = new ExcelUtility();
+	
 	
 	public HomePage(WebDriver driver) 
 	{
@@ -25,9 +29,9 @@ public class HomePage {
 	private WebElement searchTextbox;
 	
 	//Method to enter text in searchtextbox 
-	public void searTextbox() 
+	public void searTextbox(String Option1) throws EncryptedDocumentException, IOException  
 	   {
-		searchTextbox.sendKeys("Iphone 12");
+		searchTextbox.sendKeys(Option1);
 	   }
 	
 	//search button

@@ -20,6 +20,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class WebDriverUtility 
 {
+	
+	
 	/**
 	 * this generic method is used to open a empty browser.
 	 * pass chrome/firefox as argument

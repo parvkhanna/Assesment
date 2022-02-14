@@ -2,11 +2,8 @@ package com.crm.objectRepositories;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-
 import com.crm.genericUtilities.WebDriverUtility;
 
 public class AddToCartPage {
@@ -27,6 +24,15 @@ public class AddToCartPage {
 		addcartbtn.click();
 	}
 	
+	//To verify the product is added to cart
+	@FindBy(xpath = "//div[@id='attachAddBaseItemSuccessAlert']")
+	private WebElement addCartVerificationMsg;
+	
+	public void verification()
+	{
+		String verify = addCartVerificationMsg.getText();
+		System.out.println(verify);
+	}
 	
 	@FindBy(id ="attach-view-cart-button-form")
 	private WebElement cartoptn;
